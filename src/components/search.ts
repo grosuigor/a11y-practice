@@ -10,7 +10,5 @@ export function search() {
   button.type = 'submit'
   button.setAttribute('aria-label', 'Search')
 
-  const form = el('form', 'search', [input, button])
-  form.addEventListener('submit', (event) => event.preventDefault())
-  return form
+  return el('form', 'search', [input, button])
 }

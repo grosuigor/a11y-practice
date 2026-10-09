@@ -12,6 +12,8 @@ export function navMenu() {
   const arrow = lang.querySelector('img')!
   arrow.src = '/icons/arrow.svg'
   arrow.alt = ''
+  arrow.width = 24
+  arrow.height = 24
   lang.type = 'button'
   lang.setAttribute('aria-label', 'Language')
 

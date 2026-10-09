@@ -31,6 +31,5 @@ export function contactForm() {
     el('div', 'form__checks', [checkbox('terms', 'Accept the Terms'), checkbox('terms2', 'Accept the Terms 2', true)]),
     submit('Send Message'),
   ])
-  form.addEventListener('submit', (event) => event.preventDefault())
   return form
 }

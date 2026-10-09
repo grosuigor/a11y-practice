@@ -6,6 +6,8 @@ function photo() {
   const image = el('img', 'aside__photo')
   image.src = '/images/contact.png'
   image.alt = ''
+  image.width = 425
+  image.height = 637
   return image
 }
 

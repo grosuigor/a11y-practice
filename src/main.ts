@@ -1,4 +1,6 @@
 import './styles/index.css'
-import { mount } from './page'
+import { bind, mount } from './page'
 
-mount(document.body)
+const page = document.getElementById('top')
+if (page) bind(page)
+else mount(document.body)

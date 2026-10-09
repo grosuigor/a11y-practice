@@ -1,8 +1,8 @@
 :root {
   --green: #3a6150;
-  --green-soft: rgba(58, 97, 80, 0.7);
+  --green-soft: #3a6150;
   --ink: #111;
-  --ink-soft: rgba(17, 17, 17, 0.5);
+  --ink-soft: #5c5c5c;
   --muted: rgba(0, 0, 0, 0.6);
   --page: #f9f9f9;
   --white: #fff;

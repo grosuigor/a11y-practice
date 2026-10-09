@@ -6,6 +6,8 @@ export function aboutCard(card: Card) {
   const image = el('img', 'card__photo')
   image.src = card.image
   image.alt = ''
+  image.width = 180
+  image.height = 230
 
   const link = text('a', 'card__link', 'Learn more about →')
   link.href = '#about'
