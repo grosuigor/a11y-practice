@@ -1,0 +1,13 @@
+:root {
+  --green: #3a6150;
+  --green-soft: rgba(58, 97, 80, 0.7);
+  --ink: #111;
+  --ink-soft: rgba(17, 17, 17, 0.5);
+  --muted: rgba(0, 0, 0, 0.6);
+  --page: #f9f9f9;
+  --white: #fff;
+  --sage: #71837b;
+  --radio: #131516;
+  --pad: 64px;
+  --font: "Outfit", sans-serif;
+}

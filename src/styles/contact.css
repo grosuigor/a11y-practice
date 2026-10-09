@@ -1,0 +1,114 @@
+.contact { background: var(--sage); padding: 80px var(--pad) 120px; }
+
+.contact__card {
+  display: grid;
+  grid-template-columns: 425px 1fr;
+  max-width: 1312px;
+  margin: 0 auto;
+  min-height: 637px;
+}
+
+.aside {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  padding: 42px;
+  border-radius: 12px;
+  color: var(--ink);
+  background: var(--green);
+}
+
+.aside__photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 100% 100%;
+  pointer-events: none;
+}
+
+.aside > :not(.aside__photo) { position: relative; z-index: 1; }
+
+.aside__title { margin: 0; font-size: 48px; font-weight: 700; line-height: 1.2; }
+
+.aside__text { margin: 16px 0 0; max-width: 335px; font-size: 14px; line-height: 1.5; }
+
+.aside__list { display: grid; gap: 19px; }
+
+.aside__row { display: flex; align-items: center; gap: 24px; font-size: 14px; }
+
+.aside__socials { display: flex; gap: 36px; margin-top: auto; }
+
+.form {
+  display: grid;
+  gap: 26px;
+  justify-items: end;
+  padding: 48px 20px 48px 28px;
+  border-radius: 0 12px 12px 0;
+  background: var(--white);
+}
+
+.form__row, .choices, .form__checks { display: flex; gap: 18px; width: 100%; }
+
+.choices { gap: 28px; flex-wrap: wrap; }
+
+.form__checks { gap: 48px; justify-content: start; }
+
+.field { display: grid; gap: 8px; width: min(416px, 100%); }
+
+.field--wide, .field__input--area { width: 100%; }
+
+.field__label { font-size: 14px; line-height: 20px; }
+
+.field__mark { color: red; }
+
+.field__input, .phone__control {
+  width: 100%;
+  border: 1px solid var(--ink);
+  border-radius: 3px;
+  padding: 12px 12px 12px 8px;
+  color: var(--ink);
+  background: var(--white);
+}
+
+.form__row:first-child .field:first-child .field__input { border-width: 2px; border-color: var(--green); }
+
+.field__input--area { min-height: 104px; resize: vertical; }
+
+.field__input::placeholder, .phone__number::placeholder { color: var(--ink-soft); }
+
+.phone__control { display: flex; align-items: center; gap: 8px; padding-block: 8px; }
+
+.phone__code {
+  border: 0;
+  background: transparent;
+  appearance: none;
+  width: 52px;
+}
+
+.phone__number { flex: 1; border: 0; outline: none; min-width: 0; }
+
+.phone__caret { color: var(--ink-soft); }
+
+.choice, .check {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--radio);
+  font-size: 14px;
+  letter-spacing: 0.15px;
+  cursor: pointer;
+}
+
+.choice__input, .check__input { position: absolute; opacity: 0; }
+
+.choice img:last-of-type, .check img:last-of-type { display: none; }
+
+.choice:has(input:checked) img:first-of-type,
+.check:has(input:checked) img:first-of-type { display: none; }
+
+.choice:has(input:checked) img:last-of-type,
+.check:has(input:checked) img:last-of-type { display: block; }

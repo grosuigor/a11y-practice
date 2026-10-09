@@ -1,0 +1,10 @@
+body {
+  background: var(--page);
+  color: var(--ink);
+  font-family: var(--font);
+  line-height: 1.5;
+}
+
+.page {
+  min-width: 320px;
+}
